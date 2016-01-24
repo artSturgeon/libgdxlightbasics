@@ -125,6 +125,7 @@ public class BoxBox extends ScreenAdapter {
     @Override
     public void render (float delta) {
 
+        camera.position.set(fellerBody.getPosition().x, fellerBody.getPosition().y, 0);
         camera.update();
         Gdx.gl.glClearColor(0.2f, 0.2f, 0.2f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
